@@ -1,0 +1,47 @@
+body {
+    background-image: url(https://freevector-images.s3.amazonaws.com/uploads/vector/preview/41356/Vector4free-White-Gold-Background-Revisi2-DP0822_generated.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 5em;
+    color: #000000;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 3em;
+    color: #000000;
+    margin-top: 0;
+}
+
+span {
+    color: #42c53b;
+}
+
+.s2 {
+    color: #42c53b;
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.Logo {
+    width: 100px;
+    height: 100px;
+}
+
+.content {
+    padding-block: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
