@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(img/backround.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    flex-wrap : wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.badge{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.content{
+    padding: 10px;
+    justify-content: center;
+}
+
+.text{
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.abra {
+    background-color: #FF69B4;
+}
+
+.bulbasaur {
+    background-color: #78C850;
+}
+
+.charmander {
+    background-color: #F08030;
+}
+
+.eevee {
+    background-color: #A8A878;
+}
+
+.jigglypuff {
+    background-color: #A8A878;
+}
+
+.caterpie {
+    background-color: #78C850;
+}
+
+.pikachu {
+    background-color: #F8D030;
+}
+
+.psyduck {
+    background-color: #6890F0;
+}
+
+.dratini {
+    background-color: #7038F8;
+}
+
+.squirtle {
+    background-color: #6890F0;
+}
+
+.mew{
+    background-color: #FF69B4;
+}
+
+.pidgey{
+    background-color: #A8A878;
+}
+
+.abra:hover{
+    background-color: #913b66;
+}
+
+.bulbasaur:hover{
+    background-color: #4E8234;
+}
+
+.charmander:hover{
+    background-color: #7e4014;
+}
+
+.eevee:hover{
+    background-color: #5c5c41;
+}
+
+.jigglypuff:hover{
+    background-color: #5c5c41;
+}
+
+.caterpie:hover{
+    background-color: #4E8234;
+}
+
+.pikachu:hover{
+    background-color: #806b1a;
+}
+
+.psyduck:hover{
+    background-color: #31436d;
+}
+
+.dratini:hover{
+    background-color: #3a1d7c;
+}
+
+.squirtle:hover{
+    background-color: #354979;
+}
+
+.mew:hover{
+    background-color: #913b66;
+}
+
+.pidgey:hover{
+    background-color: #5c5c41;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+
