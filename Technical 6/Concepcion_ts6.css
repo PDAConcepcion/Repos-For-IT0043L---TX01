@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./img/backround1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    width: 90%;
+    height: 100%;
+    margin: 30px auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.character{
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-content: center;
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+
+.content{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.c1{
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.c4{
+    text-align: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.desc{
+    justify-content: center;
+}
+
+.name{
+    color: rgb(255, 255, 255);
+    text-shadow:rgb(60, 60, 60) 2px 2px 3px;
+    font-size: 35px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.info{
+    color: rgb(255, 255, 255);
+    text-shadow:rgb(60, 60, 60) 1px 1px 5px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+img{
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+#box1 {
+    background-color: rgb(251,205,184);
+    border: rgb(194, 159, 142) solid 5px;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+#box2 {
+    background-color: rgb(231, 183, 87);
+    border: rgb(176, 143, 72) solid 5px;
+    grid-column: 3;
+    grid-row: 1;
+    }
+
+#box3 {
+    background-color: rgb(237,199,219);
+    border: rgb(182, 154, 169) solid 5px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#box4 {
+    background-color: rgb(175,218,184);
+    border: rgb(131, 161, 138) solid 5px;
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+#box5 {
+    background-color: rgb(152,215,246);
+    border: rgb(101, 145, 167) solid 5px;
+    grid-column: 4;
+    grid-row: 1/3;
+}
+
+#box1, #box2, #box3, #box4, #box5 {
+    transition: transform 0.5s, background-color 0.5s, border 0.5s;
+}
+
+#box1:hover {
+    background-color: rgb(201, 153, 136);
+    border: rgb(141, 116, 103) solid 5px;
+    transform: scale(1.02);
+}
+
+#box2:hover {
+    background-color: rgb(169, 132, 58);
+    border: rgb(145, 118, 59) solid 5px;
+    transform: scale(1.02);
+}
+
+#box3:hover {
+    background-color: rgb(182, 153, 168);
+    border: rgb(128, 108, 119) solid 5px;
+    transform: scale(1.02);
+}
+
+#box4:hover {
+    background-color: rgb(117, 157, 132);
+    border: rgb(83, 106, 91) solid 5px; 
+    transform: scale(1.02);
+}
+
+#box5:hover {
+    background-color: rgb(108, 165, 191);
+    border: rgb(62, 102, 118) solid 5px;
+    transform: scale(1.02);
+}
+
+@media (max-width: 1400px) {
+    .container {
+        width: 90%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #box1, #box2, #box3, #box4{
+        grid-column: span 1;
+        grid-row: auto;
+    }
+
+    #box5{
+        grid-column: 2;
+        grid-row: 1/3; 
+    }  
+
+    .content {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 1100px){
+    .container {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #box1, #box2, #box3, #box4{
+        grid-column: span 1;
+        grid-row: auto;
+    }
+
+    #box5{
+        grid-column: 1/3;
+        grid-row: 3; 
+    }
+}
+
+@media (max-width: 800px){
+    .container {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    #box1, #box2, #box3, #box4, #box5{
+        grid-column: span 1;
+        grid-row: auto;
+    }
+}
