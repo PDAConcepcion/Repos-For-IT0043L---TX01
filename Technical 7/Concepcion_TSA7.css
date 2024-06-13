@@ -26,6 +26,7 @@ nav{
 nav a{
     text-decoration: none;
     color: rgb(0, 0, 0);
+    text-shadow: rgb(156, 156, 156) 2px 2px 2px;
     padding: 10px;
     font-size: 1.6rem;
     font-weight: bold;
@@ -83,7 +84,8 @@ nav ul li{
 
 .footer {
     background-color: rgba(152, 215, 246, 0.835);
-    color: white;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(224, 224, 224) 1px 1px 1px;
     text-align: center;
     padding: 20px;
     position: relative; /* Ensure it's at the bottom of the content, not fixed */
@@ -104,9 +106,20 @@ nav ul li{
 .social-media a {
     margin: 0 10px;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
+
+.createdby{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.CBY_Name{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
 
 .content_container{
     padding: 15px;
@@ -198,6 +211,7 @@ img{
     font-size: 20px;
     text-align: justify;
     color: rgb(40, 40, 40);
+    text-shadow: rgba(255, 255, 255, 0.511) 2px 2px 3px;
     margin: 10px;
     padding: 5px;
     font-size: 20px;
