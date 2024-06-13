@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Concepcion_TSA7.css">
+    <title>Technical 7</title>
+</head>
+
+<body>
+    <nav class="header">
+        <button class="Logo_button">
+            <div class="logo">
+                <img src="./img/adventure time logo.png" alt="ADT_Logo.png">
+            </div>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <div class="nav-links">
+            <ul>
+                <li id="1"><a href="#">Home</a></li>
+                <li id="2"><a href="#">Characters</a></li>
+                <li id="3"><a href="#">Story</a></li>
+                <li id="4"><a href="#">Gallery</a></li>
+                <li id="5"><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <main>
+        <div class="content_container">
+            <!-- main start -->
+
+            <!-- Main Pciture & Description -->
+            <div class="main_picture" id="main_picture">
+                <img src="./img/Adventur time upper part.jpg" alt="home.png">
+            </div>
+            <div class="AD" id="AD_Desc">
+                <p class="AD_Desc">
+                    Adventure Time follows the adventures of a boy named Finn the Human (voiced by Jeremy Shada), and his best friend and adoptive brother Jake the Dog (John DiMaggio), who has magical powers to change shape and size at will. Pendleton Ward, the series' creator, describes Finn as a "fiery little kid with strong morals".
+                </p>
+                <p class="AD_Desc">
+                    The series is based on a 2007 short produced for Nicktoons and Frederator Studios' animation incubator series Random! Cartoons. After the short became a viral hit on the Internet, Cartoon Network commissioned a full-length series, which previewed on March 11, 2010, and officially premiered on April 5, 2010. The show ended on September 3, 2018, after ten seasons and 283 episodes.
+                </p>
+            </div>
+
+            <!-- Series -->
+            <div class="series" id="Series">
+                <button id="season-01" class="season">
+                    <p class="season_detail">Season 01</p>
+                </button>
+                <button id="season-02" class="season">
+                    <p class="season_detail">Season 02</p>
+                </button>
+                <button id="season-03" class="season">
+                    <p class="season_detail">Season 03</p>
+                </button>
+                <button id="season-04" class="season">
+                    <p class="season_detail">Season 04</p>
+                </button>
+                <button id="season-05" class="season">
+                    <p class="season_detail">Season 05</p>
+                </button>
+                <button id="season-06" class="season">
+                    <p class="season_detail">Season 06</p>
+                </button>
+                <button id="season-07" class="season">
+                    <p class="season_detail">Season 07</p>
+                </button>
+                <button id="season-08" class="season">
+                    <p class="season_detail">Season 08</p>
+                </button>
+                <button id="season-09" class="season">
+                    <p class="season_detail">Season 09</p>
+                </button>
+                <button id="season-10" class="season">
+                    <p class="season_detail">Season 10</p>
+                </button>
+                <button id="season-11" class="season">
+                    <p class="season_detail">Season 11</p>
+                </button>
+                <button id="season-12" class="season">
+                    <p class="season_detail">Season 12</p>
+                </button>
+                <button id="season-13" class="season">
+                    <p class="season_detail">Season 13</p>
+                </button>
+                <button id="season-14" class="season">
+                    <p class="season_detail">Season 14</p>
+                </button>
+                <button id="season-LP" class="season">
+                    <p class="season_detail">List of Episode</p>
+                </button>
+            </div>
+
+            <!-- Finn -->
+            <button class="character-button" id="Finn">
+                <div class="content c1">
+                    <div class="image-container">
+                        <img src="./img/Finn Tag.png" alt="Finn.png">
+                    </div>
+                    <div class="desc">
+                        <h1 class="name">Finn</h1>
+                    </div>
+                </div>
+            </button>
+            
+            <!-- Jake -->
+            <button class="character-button" id="Jake">
+                <div class="content c2">
+                    <div class="image-container">
+                        <img src="./img/Jake Tag.png" alt="Jake.png">
+                    </div>
+                    <div class="desc">
+                        <h1 class="name">Jake</h1>
+                    </div>
+                </div>
+            </button>
+            
+            <!-- BMO -->
+            <button class="character-button" id="BMO">
+                <div class="content c4">
+                    <div class="image-container">
+                        <img src="./img/BMO Tag.png" alt="BMO.png">
+                    </div>
+                    <div class="desc">
+                        <h1 class="name">BMO</h1>
+                    </div>
+                </div>
+            </button>
+            
+            <!-- Ice King -->
+            <button class="character-button" id="IceKing">
+                <div class="content c5">
+                    <div class="image-container">
+                        <img src="./img/Ice king Tag.png" alt="Simon.png">
+                    </div>
+                    <div class="desc">
+                        <h1 class="name">Ice King</h1>
+                    </div>
+                </div>
+            </button>
+            
+            <!-- More Characters -->
+            <button class="character-button" id="More">
+                <div class="content c6">
+                    <h1 class="name">More Characters</h1>
+                </div>
+            </button>
+
+            <!--main end -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Adventure Time. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <p class="createdby">Created by: <br> <span class="CBY_Name">Patrick Dhale A. Concepcion</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>

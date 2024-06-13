@@ -1,0 +1,617 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.2s ease;
+}
+
+main{
+    background: rgba(250, 235, 215, 0.5);
+}
+
+nav{
+    padding: 5px;
+    background-color: rgba(152, 215, 246, 0.835);
+    height: fit-content;
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(156, 156, 156) 2px 2px 2px;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+nav ul{
+    padding: 10px;
+    margin-right: 60px;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li{
+    padding: 10px;
+    margin: 5px;
+}
+
+.menu-toggle {
+    margin-right: 60px;
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    margin-top: 21px;
+    margin-right: 30px;
+    display: flex;
+    align-items: right;
+}
+
+.logo img{
+    padding: 0;
+    margin: 0px 0px 0px 20px;
+    height: 100px;
+    width: 200px;
+}
+
+.Logo_button{
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.footer {
+    background-color: rgba(152, 215, 246, 0.835);
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(224, 224, 224) 1px 1px 1px;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Ensure it's at the bottom of the content, not fixed */
+    width: 100%;
+    margin-top: 20px; /* Add some space before the footer */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.createdby{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.CBY_Name{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+
+.content_container{
+    padding: 15px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr, 0.1fr, 1fr);
+    gap: 10px;
+}
+
+.character{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.character-button {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    background: none;
+    border: none;
+}
+
+.character-button .content {
+    height: fit-content;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    height: fit-content;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc{
+    justify-content: center;
+}
+
+.name{
+    color: rgb(255, 255, 255);
+    text-shadow:rgb(60, 60, 60) 2px 2px 3px;
+    font-size: 35px;
+    margin: 10px;
+    padding: 5px;
+}
+
+img{
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.main_picture img{
+    width: 100%;
+    height: 98%;
+    border-radius: 30px;
+}
+
+.AD {
+    align-self: center;
+    height: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.AD_Desc{
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+    color: rgb(40, 40, 40);
+    text-shadow: rgba(255, 255, 255, 0.511) 2px 2px 3px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.series{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.series button{ 
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(232, 232, 232);
+    text-shadow: rgb(60, 60, 60) 2px 2px 3px;
+}
+
+button {
+    transition: transform 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#season-LP{
+    background-color: rgb(110, 98, 82);
+    border: rgb(217, 194, 164) 5px solid;
+    grid-column: 3/6;
+    grid-row: 3;
+}
+
+#season-LP:active {
+    background-color: rgb(90, 80, 68); 
+}
+
+#season-01,
+#season-02,
+#season-03,
+#season-04,
+#season-05,
+#season-06,
+#season-07 {
+    background-color: rgb(110, 98, 82);
+    border: rgb(217, 194, 164) 5px solid;
+    grid-column: span 1;
+    grid-row: 1;
+}
+
+#season-08,
+#season-09,
+#season-10,
+#season-11,
+#season-12,
+#season-13, 
+#season-14 {
+    background-color: rgb(110, 98, 82);
+    border: rgb(217, 194, 164) 5px solid;
+    grid-column: span 1;
+    grid-row: 2;
+}
+
+#season-01:active,
+#season-02:active,
+#season-03:active,
+#season-04:active,
+#season-05:active,
+#season-06:active,
+#season-07:active {
+    background-color: rgb(90, 80, 68);
+}
+
+#season-08:active,
+#season-09:active,
+#season-10:active,
+#season-11:active,
+#season-12:active,
+#season-13:active,
+#season-14:active {
+    background-color: rgb(90, 80, 68);
+}
+
+#main_picture{
+    image-resolution: from-image;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+
+#AD_Desc{
+    background-color: rgb(255, 230, 194);
+    border: rgb(179, 161, 136)  5px solid;
+    grid-column: 4;
+    grid-row: 1;
+}
+
+#Series{
+    background-color: rgb(255, 230, 194);
+    border: rgb(179, 161, 136)  5px solid;
+    grid-column: 1/5;
+    grid-row: 2;
+}
+
+#Finn {
+    background-color: rgb(251,205,184);
+    border: rgb(194, 159, 142) solid 5px;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#Finn:active {
+    background-color: rgb(231, 183, 162);
+}
+
+#Jake {
+    background-color: rgb(231, 183, 87);
+    border: rgb(176, 143, 72) solid 5px;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#Jake:active {
+    background-color: rgb(211, 163, 67);
+}
+
+#BMO {
+    background-color: rgb(175,218,184);
+    border: rgb(131, 161, 138) solid 5px;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#BMO:active {
+    background-color: rgb(155, 198, 164);
+}
+
+#IceKing {
+    background-color: rgb(152,215,246);
+    border: rgb(101, 145, 167) solid 5px;
+    grid-column: 4;
+    grid-row: 3;
+}
+
+#IceKing:active {
+    background-color: rgb(132, 195, 226);
+}
+
+#More {
+    background-color: rgb(230, 15, 15);
+    border: rgb(179, 14, 14) solid 5px;
+	font: inherit;
+    grid-column: 2/4;
+    grid-row: 4;
+}
+
+#More:active {
+    background-color: rgb(210, 15, 15);
+}
+
+@media (max-width: 1350px) {
+    .logo img{
+        padding: 0;
+        margin: 0px 0px 0px 20px;
+        height: 100px;
+        width: 200px;
+    }
+
+    .nav-links ul li a {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    .content_container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, auto);
+        gap: 10px;
+    }
+
+    .series {
+        grid-template-columns: repeat(4, 1fr); /* 6 columns */
+        grid-template-rows: repeat(6, auto); /* 4 rows */
+    }
+
+    #season-01,
+    #season-02,
+    #season-03,
+    #season-04 {
+        grid-column: span 1;
+        grid-row: 1;
+    }
+
+    #season-05,
+    #season-06,
+    #season-07,
+    #season-08 {
+        grid-column: span 1;
+        grid-row: 2;
+    }
+
+    #season-09,
+    #season-10,
+    #season-11,
+    #season-12 {
+        grid-column: span 1;
+        grid-row: 3;
+    }
+
+    #season-13 {
+        grid-column: span 2;
+        grid-row: 4;
+    }
+
+    #season-14{
+        grid-column: span 2;
+        grid-row: 4;
+    }
+    
+    #season-LP {
+        grid-column: 1/5;
+        grid-row: 5;
+    }
+
+    .AD {
+        text-align: fit-content;
+        height: fit-content;
+    }
+
+    #main_picture{
+        image-resolution: from-image;
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    #AD_Desc{
+        background-color: rgb(255, 230, 194);
+        border: rgb(179, 161, 136)  5px solid;
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+    
+
+    #Series{
+        background-color: rgb(255, 230, 194);
+        border: rgb(179, 161, 136)  5px solid;
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+
+    #Finn, #Jake, #BMO{
+        grid-column: span 1;
+        grid-row: 4; 
+    }
+
+    #IceKing{
+        grid-column: 1/4;
+        grid-row: 5;
+    }
+
+    #More{
+        grid-column: 1/4;
+        grid-row: 6;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .logo img {
+        height: 100px;
+        width: 200px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(152, 215, 246, 0.835);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        margin: 0;
+        width: 100%;
+        text-align: right;
+    }
+
+    .nav-links ul li a {
+        padding: 10px;
+        width: 100%;
+        display: block;
+    }
+
+    /* Hover effect to expand nav bar */
+    .header:hover .nav-links {
+        display: flex;
+    }
+
+    .content_container {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: repeat(8, auto); /* Adjust the number of rows */
+        gap: 10px;
+    }
+
+    .series {
+        grid-template-columns: repeat(2, 1fr); /* 6 columns */
+        grid-template-rows: repeat(9, auto); /* 4 rows */
+    }
+
+    #season-01,
+    #season-02 {
+        grid-column: span 1;
+        grid-row: 1;
+    }
+
+    #season-03,
+    #season-04 {
+        grid-column: span 1;
+        grid-row: 2;
+    }
+
+    #season-05,
+    #season-06 {
+        grid-column: span 1;
+        grid-row: 3;
+    }
+    #season-07,
+    #season-08 {
+        grid-column: span 1;
+        grid-row: 4;
+    }
+
+    #season-09,
+    #season-10 {
+        grid-column: span 1;
+        grid-row: 5;
+    }
+    #season-11,
+    #season-12 {
+        grid-column: span 1;
+        grid-row: 6;
+    }
+
+    #season-13,
+    #season-14 {
+        grid-column: span 1;
+        grid-row: 7;
+    }
+    
+    #season-LP {
+        grid-column: 1/3;
+        grid-row: 8;
+    }
+
+    #main_picture {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #AD_Desc {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #Series {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #Finn, #Jake, #BMO, #IceKing {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    #More {
+        grid-column: 1;
+        grid-row: 9;
+    }
+}
