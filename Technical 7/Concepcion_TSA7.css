@@ -34,7 +34,6 @@ nav a{
 
 nav ul{
     padding: 10px;
-    margin-right: 60px;
     list-style: none;
     display: flex;
     justify-content: right;
@@ -55,8 +54,6 @@ nav ul li{
 }
 
 .nav-links {
-    margin-top: 21px;
-    margin-right: 30px;
     display: flex;
     align-items: right;
 }
@@ -89,9 +86,9 @@ nav ul li{
     text-shadow: rgb(224, 224, 224) 1px 1px 1px;
     text-align: center;
     padding: 20px;
-    position: relative; /* Ensure it's at the bottom of the content, not fixed */
+    position: relative;
     width: 100%;
-    margin-top: 20px; /* Add some space before the footer */
+    margin-top: 20px;
 }
 
 .footer-content {
@@ -118,7 +115,7 @@ nav ul li{
 
 .CBY_Name{
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);    
 }
 
 
@@ -389,9 +386,19 @@ button:active {
         width: 200px;
     }
 
-    .nav-links ul li a {
-        font-size: 1.5rem;
-        padding: 5px;
+    .header{
+        flex-direction: column;
+    }
+
+    .logo img{
+        margin: 0px;
+        justify-content: center;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
     }
 
     .content_container {
@@ -401,8 +408,8 @@ button:active {
     }
 
     .series {
-        grid-template-columns: repeat(4, 1fr); /* 6 columns */
-        grid-template-rows: repeat(6, auto); /* 4 rows */
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(6, auto); 
     }
 
     #season-01,
@@ -487,62 +494,29 @@ button:active {
     
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
     .logo img {
         height: 100px;
         width: 200px;
     }
 
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: rgba(152, 215, 246, 0.835);
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-links.active {
+    nav ul{
+        width: 100%;
         display: flex;
-    }
-
-    .nav-links ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-links ul li {
-        margin: 0;
-        width: 100%;
-        text-align: right;
-    }
-
-    .nav-links ul li a {
-        padding: 10px;
-        width: 100%;
-        display: block;
-    }
-
-    /* Hover effect to expand nav bar */
-    .header:hover .nav-links {
-        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
     }
 
     .content_container {
-        grid-template-columns: 1fr; /* Single column layout */
-        grid-template-rows: repeat(8, auto); /* Adjust the number of rows */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
         gap: 10px;
     }
 
     .series {
-        grid-template-columns: repeat(2, 1fr); /* 6 columns */
-        grid-template-rows: repeat(9, auto); /* 4 rows */
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(9, auto);
     }
 
     #season-01,
@@ -613,5 +587,38 @@ button:active {
     #More {
         grid-column: 1;
         grid-row: 9;
+    }
+}
+
+@media (max-width: 800px) {
+    nav ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 0px;
+    }
+
+    .series {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
+    }
+
+    #season-01, 
+    #season-02, 
+    #season-03, 
+    #season-04,
+    #season-05, 
+    #season-06, 
+    #season-07, 
+    #season-08,
+    #season-09, 
+    #season-10, 
+    #season-11, 
+    #season-12, 
+    #season-13, 
+    #season-14 {
+        grid-column: 1;
+        grid-row: auto;
     }
 }
