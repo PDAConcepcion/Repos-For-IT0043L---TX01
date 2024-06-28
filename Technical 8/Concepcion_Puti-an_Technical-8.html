@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Technical 8.css">
+    <title>Technical 8</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content-output">
+            <h1 class="box-flex" id="b1">1</h1>
+            <h1 class="box-flex" id="b2">2</h1>
+            <h1 class="box-flex" id="b3">3</h1>
+        </div>
+
+        <div class="menu-container">
+            <div class="flex">
+                <button id="flex-reset" onclick="resetFlexbox()">Reset Flexbox</button>
+                <div class="butt">
+                    <button id="D-gap" onclick="updateGap()">Gap</button>
+                    <input type="number"  id="BI" value="0">
+                </div>
+                <p>Flex Direction</p>
+                <button id="row" onclick="flexDirection('row')">Row</button>
+                <button id="column" onclick="flexDirection('column')">Column</button>
+
+            </div>
+            <div class="justify-content">
+                <p>Justify Content</p>
+                <button id="start" onclick="justifyContent('start')">Start</button>
+                <button id="center" onclick="justifyContent('center')">Center</button> 
+                <button id="end" onclick="justifyContent('end')">End</button>
+                <button id="space-between" onclick="justifyContent('space-between')">Space Between</button>
+                <button id="space-around" onclick="justifyContent('space-around')">Space Around</button>
+                <button id="space-evenly" onclick="justifyContent('space-evenly')">Space Evenly</button>
+            </div>
+            <div class="align-items">
+                <p>Align Items</p>
+                <button id="start" onclick="alignItems('start')">Start</button> 
+                <button id="center" onclick="alignItems('center')">Center</button>
+                <button id="end" onclick="alignItems('end')">End</button>
+            </div>
+            <div class="flex-grow">
+                <p>Flex Grow</p>
+                <div class="butt">
+                    <button id="grow-reset" onclick="resetFlexGrow()">Reset</button>
+                    <button id="grow" onclick="GrowAll()">Grow All</button>
+                </div>
+                <div class="butt">
+                    <button id="BD1" onclick="updateB1()">Box 1</button>
+                    <input type="number" name="box-1" id="B1" value="0">
+                </div>
+                <div class="butt">
+                    <button id="BD2" onclick="updateB2()">Box 2</button>
+                    <input type="number" name="box-2" id="B2" value="0">
+                </div>
+                <div class="butt">
+                    <button id="BD3" onclick="updateB3()">Box 3</button>
+                    <input type="number" name="box-3" id="B3" value="0">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Technical 8.js"></script>
+</body>
+
+</html>
