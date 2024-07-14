@@ -1,5 +1,22 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                history.pushState(null, '', `#${id}`);
+            }
+        });
+    }, {
+        rootMargin: '0px',
+        threshold: 0.5,
+    });
+
+    document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+    });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Select all buttons within the projects-list div
     var buttons = document.querySelectorAll('.projects-list .project');
 
     buttons.forEach(function(button) {
@@ -17,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const hideAllButton = document.getElementById('p10');
     const hiddenProjects = document.querySelectorAll('.hidden-project');
 
-    // Initially hide the "Show Less" button
     hideAllButton.style.display = 'none';
 
     showAllButton.addEventListener('click', () => {
